@@ -8,6 +8,55 @@
 </head>
 
 <body>
-    
+    <header>
+        <h1>Coding Quiz</h1>
+        <p>Answer the following code-related questions within the time limit. Know that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button id="Leaderboard-btn">Leaderboard</button>
+    </header>
+
+    <main>
+        <div id="start-screen">
+            <h2>Start Quiz</h2>
+            <button id="start-btn">Start</button>
+        </div>
+
+        <div id="question-screen">
+            <h2>Question</h2>
+            <p id="question-text"></p>
+            <div id="answer-buttons">
+                <button class="answer-btn">Answer A</button>
+                <button class="answer-btn">Answer B</button>
+                <button class="answer-btn">Answer C</button>
+                <button class="answer-btn">Answer D</button>
+            </div>
+        </div>
+
+        <div id="end-screen">
+            <h2>Quiz Complete!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <form>
+                <label for="initials">Enter initials:</label>
+                <input type="text" id="initials" name="initials" maxlength="3">
+                <button id="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div id="leaderboard-screen">
+            <h2>Leaderboard</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Initials</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-table">
+                </tbody>
+            </table>
+            <button id="back-btn">Back</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+    </main>
+
 </body>
 </html>
